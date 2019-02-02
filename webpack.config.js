@@ -2,10 +2,8 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-
     entry: [
-        './src/js/index.js',
-        './src/sass/style.sass'
+        './src/js/index.js'
     ],
 
     output: {
@@ -28,48 +26,38 @@ module.exports = {
                 }
             },
             {
-                test: /\.(sass|scss)$/,
-                include: path.resolve(__dirname, 'src/sass'),
+                test: /\.(sa|sc|c)ss$/,
+                // include: path.resolve(__dirname, 'src/sass'),
                 exclude: /(node_modules|bower_components)/,
                 use: [
-                    
-                    MiniCssExtractPlugin.loader,
                     {
-                        loader: 'css-loader',
-                        options: {
-                            sourceMap: true
-                        }
+                        loader: MiniCssExtractPlugin.loader
                     },
-                    
-                    // {
-                    //     loader: 'postcss-loader',
-                    //     options: {
-                    //         ident: 'postcss',
-                    //         // url: false,
-                    //         plugins: [
-                    //             require('autoprefixer')({
-                    //                 // cascade: false
-                    //             })
-                    //         ]
-                    //     }
-                    // },
-
                     {
-                        loader: 'resolve-url-loader',
-                        options: {
-                            engine: 'rework'
-                        }
+                        loader: 'css-loader'
                     },
-
                     {
-                        loader: 'sass-loader',
-                        options: {
-                            sourceMap: true,
-                            sourceMapContents: false
-                        }
+                        loader: 'sass-loader'
                     }
                 ]
-            }
+            },
+            {
+                test: /\.(jpe?g|png|gif)$/,
+                loader: 'url-loader',
+                options: {
+                    limit: 100
+                    // limit: 10 * 1024
+                }
+            },
+            {
+                test: /\.(png|jpg|gif)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: { name: 'img/[name].[ext]' },
+                    },
+                ],
+            },
         ]
     },
 
