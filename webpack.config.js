@@ -27,7 +27,6 @@ module.exports = {
             },
             {
                 test: /\.(sa|sc|c)ss$/,
-                // include: path.resolve(__dirname, 'src/sass'),
                 exclude: /(node_modules|bower_components)/,
                 use: [
                     {
@@ -45,25 +44,26 @@ module.exports = {
                 test: /\.(jpe?g|png|gif)$/,
                 loader: 'url-loader',
                 options: {
-                    limit: 100
-                    // limit: 10 * 1024
+                    // limit: 100
+                    limit: 10 * 1024
                 }
             },
-            {
-                test: /\.(png|jpg|gif)$/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: { name: 'img/[name].[ext]' },
-                    },
-                ],
-            },
+            // {
+            //     test: /\.(png|jpg|gif)$/,
+            //     use: [
+            //         {
+            //             loader: 'file-loader',
+            //             options: { name: 'img/[name].[ext]' },
+            //         },
+            //     ],
+            // },
         ]
     },
 
     plugins: [
         new MiniCssExtractPlugin({
             filename: './css/style.bundle.css'
+            // filename: './style.bundle.css'
         }),
     ]
 };
