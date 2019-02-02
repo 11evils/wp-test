@@ -1,0 +1,146 @@
+.wrap-mainMenu
+    width: 100%
+    height: 55px
+    display: flex
+    justify-content: center
+    background-color: #fbe239
+.mainMenu
+    height: 100%
+    width: 540px
+    display: flex
+    justify-content: center
+    z-index: 100
+    .liHight  
+        height: 100%
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center
+        &:hover
+            background-color: #009baf
+        &:nth-child(1)
+            padding: 0px 10px
+        &:nth-child(3)
+            padding: 0px 10px
+    .centerLi
+        padding: 0px 10px
+        position: relative
+    .centerLi::before
+        position: absolute
+        left: 0px
+        opacity: .1
+        content: "" 
+        width: 1px
+        height: 30px
+        background-color: black
+        vertical-align: middle
+    .centerLi::after
+        position: absolute
+        right: 0px
+        opacity: .1
+        content: "" 
+        width: 1px
+        height: 30px
+        background-color: black
+        vertical-align: middle
+    .linkHight   
+        font: 14px MuseoSansBlack
+        text-decoration: none
+        color: black
+        &::after
+            content: ""
+            width: 0
+            height: 0
+            border-left: 4px solid transparent
+            border-right: 4px solid transparent
+            border-top: 7px solid rgba(0, 0, 0, .5)
+            display: inline-block
+            vertical-align: middle
+            margin-left: 5px
+            margin-top: -2px
+    div
+.sub-menu
+    visibility: hidden
+    position: absolute
+    top: 100%
+    left: 0
+    background-color: #f2f6f7
+    
+    .liMidle
+        width: 245px
+        height: 35px
+        position: relative
+        // text-align: right
+        display: flex
+        align-items: center
+        padding-left: 10px
+        border-bottom: 1px solid lighten(#1f8ea4, 50%)
+        &:hover
+            background-color: white
+        &:nth-child(10)
+            border-bottom: none
+    .linkMidle
+        text-decoration: none
+        color: #1f8ea4
+        font-family: MuseoSansBold
+
+.lastSub-menu
+    visibility: hidden
+    position: absolute
+    top: -1px
+    left: 245px
+    background-color: darken(#f2f6f7, 10%)
+    .liBottom
+        width: 245px
+        height: 35px
+        text-align: left
+        display: flex
+        align-items: center
+        padding-left: 10px
+        padding-right: 10px
+        border-bottom: 1px solid lighten(#1f8ea4, 50%)
+        &:nth-child(1)
+            border-top: 1px solid lighten(#1f8ea4, 50%)
+        &:hover
+            background-color: white
+    .linkBottom
+        text-decoration: none
+        color: #1f8ea4
+        font-family: MuseoSansBold
+
+.liHight:nth-child(3) > .sub-menu .lastSub-menu
+    left: -245px
+.liHight:nth-child(3) > .sub-menu .liMidle
+    padding-left: 25px
+
+.yellowRightArrow
+    &::after
+        content: ""
+        width: 0
+        height: 0
+        border-top: 4px solid transparent
+        border-bottom: 4px solid transparent
+        border-left: 7px solid #fece0a
+        display: inline-block
+        vertical-align: middle
+        position: absolute
+        right: 13px
+
+.yellowLeftArrow
+    &::before
+        content: ""
+        width: 0
+        height: 0
+        border-top: 4px solid transparent
+        border-bottom: 4px solid transparent
+        border-right: 7px solid #fece0a
+        display: inline-block
+        vertical-align: middle
+        position: absolute
+        left: 10px
+
+.liHight:hover > .sub-menu
+    visibility: visible
+
+.liMidle:hover > .lastSub-menu
+    visibility: visible

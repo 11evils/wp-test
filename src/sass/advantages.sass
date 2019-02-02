@@ -1,0 +1,150 @@
+.advantages
+    background-image: url(./../img/emergencyBg.jpg)
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    background-size: cover
+    display: flex
+    justify-content: center
+    padding-bottom: 30px
+    &--wrapper
+        height: 100%
+        text-align: center
+        width: 970px
+    &--title
+        border: 2px solid #fece0a
+        border-left: none
+        border-right: none
+        color: #1f8ea4
+        display: inline-block
+        font-family: MuseoSansBold
+        font-size: 24px
+        margin: 2rem 0 2rem 0
+        text-align: center
+    &--blocks
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-gap: 20px
+    &--econom
+        color: #1f8ea4
+        font-family: MuseoSansBold
+        font-size: 29px
+        margin-top: 40px
+    &--pay
+        color: #5d5d5d
+        font-family: SegoeUIRegular
+        font-size: 18px
+        margin-top: 10px
+    &--buttons
+        margin-top: 20px
+    &--button-callMaster
+        background-color: #fbe239
+        border: none
+        border-radius: 7px
+        color: #231f20
+        cursor: pointer
+        font-family: MuseoSansBlack
+        font-size: 16px
+        height: 50px
+        margin-right: 5px
+        text-transform: uppercase
+        transition: all .3s ease
+        width: 190px
+        &:focus
+            outline: none
+    &--buttonDownload
+        background-color: #1f8ea4
+        border: none
+        border-radius: 7px
+        color: #fff
+        cursor: pointer
+        font-family: MuseoSansBlack
+        font-size: 16px
+        height: 50px
+        margin-left: 5px
+        text-transform: uppercase
+        transition: all .3s ease
+        width: 190px
+        &:focus
+            outline: none
+
+.blocksItem
+    align-items: center
+    background-color: #fff
+    box-shadow: 0 0 1.6875em 0 rgba(31, 142, 164, .31) // 27px
+    box-sizing: border-box
+    display: flex
+    font-size: 1rem
+    height: 7.5em // 120px
+    &--image
+        background-position: center center
+        background-repeat: no-repeat
+        background-size: contain
+        height: 4.375em // 70px
+        margin-left: 1.875em // 30px
+        width: 4.375em // 70px
+        &-1
+            background-image: url(./../img/reasons/gerb-50x65.png)
+        &-2
+            background-image: url(./../img/reasons/shild-53x61.png)
+        &-3
+            background-image: url(./../img/reasons/rabochi-54x57.png)
+        &-4
+            background-image: url(./../img/reasons/liner-51x69.png)
+        &-5
+            background-image: url(./../img/reasons/times-57x63.png)
+        &-6
+            background-image: url(./../img/reasons/kran-55x55.png)
+        &-7
+            background-image: url(./../img/reasons/money-58x59.png)
+        &-8
+            background-image: url(./../img/reasons/percents-62x63.png)
+    &--text
+        color: #5d5d5d
+        font-family: SegoeUIRegular
+        font-size: 1.25em // 20px
+        line-height: 1.5em // 24px
+        padding: 0 0 0 0.9375em //15px
+        text-align: left
+        width: 100%
+        &::before
+            
+        span
+            font-weight: bold
+
+@media (max-width: 991px)
+    .advantages
+        &--wrapper
+            width: 700px //970px
+    .blocksItem
+        font-size: 12px // 16px
+
+@media (max-width: 767px)
+    .advantages
+        &--wrapper
+            width: 500px //970px
+    .blocksItem
+        &--text
+            line-height: 1.1em  // 1.5em (24px)
+    
+@media (max-width: 575px)
+    .advantages
+        &--wrapper
+            width: 300px
+        &--blocks
+            grid-template-columns: 1fr
+            grid-gap: 10px
+            justify-items: center
+        &--econom
+            font-size: 24px
+            margin-top: 20px
+        &--button-callMaster
+            margin-right: 0
+        &--buttonDownload
+            margin-left: 0
+            margin-top: 10px
+    .blocksItem
+        font-size: 10px // 16px
+        width: 280px
+        &--text
+            line-height: 1.1em  // 1.5em (24px)
+        

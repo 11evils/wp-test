@@ -1,0 +1,130 @@
+.questions
+    height: 180px
+    margin-top: 40px
+    display: flex
+    justify-content: center
+    background-color: #1F8EA4
+.questions--wrapper
+    width: 970px
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+.questions--textQuestion
+    text-align: left
+    text-transform: uppercase
+    font-size: 38px
+    font-family: MuseoSansBlack
+    color: #ffe00b
+.questionsForm
+    margin-right: 120px
+    &--wrapperInputButton
+        align-items: center
+        display: flex
+    &--input
+        background-color: #FFF
+        border: 1px solid #EFEFEF
+        border-radius: 10px
+        box-shadow: 0 3px 7px rgba( 0,0,0, 0.4 )
+        box-sizing: border-box
+        color: #58595b
+        font-family: MuseoSansBlack
+        height: 45px
+        outline: none
+        padding: 0px 0px 0px 20px
+        width: 220px
+        &:focus
+            border-color: #fece0a
+    &--button
+        background-color: #ffe00b
+        border: 1px solid #ffe00b
+        border-radius: 10px
+        box-shadow: 0 3px 7px rgba( 0,0,0, 0.4 )
+        box-sizing: border-box
+        color: #404041
+        font-family: MuseoSansBlack
+        font-size: 18px
+        font-weight: 900
+        height: 45px
+        margin: 0 0 0 10px
+        text-transform: uppercase
+        transition: all .3s
+        width: 220px
+        &:focus
+            outline: none
+    &--text
+        box-sizing: border-box
+        color: #fff
+        font-family: SegoeUIRegular
+        font-size: 26px
+        margin: 15px 0 0 0
+        position: relative
+        text-align: center
+        &:before
+            background-image: url(./../img/call_left.png)
+            background-repeat: no-repeat
+            background-size: contain
+            content: ''
+            display: block
+            height: 90px
+            left: -110px
+            position: absolute
+            top: -40px
+            width: 129px
+        &:after
+            background-image: url(./../img/call_right.png)
+            background-repeat: no-repeat
+            background-size: contain
+            content: ''
+            display: block
+            height: 50px
+            position: absolute
+            right: -150px
+            top: -100px
+            width: 180px
+
+@media (max-width: 1199px)
+    .questions--wrapper
+        justify-content: space-around
+
+    .questionsForm
+        margin-right: 0 // 120px
+        &--text
+            &:after
+                display: none
+
+@media (max-width: 991px)
+    .questionsForm
+        margin-right: 0 // 120px
+        &--text
+            &:before
+                display: none
+            &:after
+                display: none
+
+@media (max-width: 767px)
+    .questions
+        height: 100% // 180px
+        padding: 30px 0
+    .questions--wrapper
+        flex-wrap: wrap // <-
+        justify-content: center // space-between
+    .questionsForm
+        display: flex // <-
+        flex-wrap: wrap // <-
+        justify-content: center //<-
+        margin-right: 0 // 120px
+        &--wrapperInputButton
+            flex-wrap: wrap // <-
+            justify-content: center // <-
+            width: 250px // <-
+        &--input
+            margin-top: 10px
+        &--button
+            margin: 10px 0 0 0 // 0 0 0 10px
+        &--text
+            width: 100%
+
+@media (max-width: 575px)
+    .questionsForm--text
+        font-size: 18px

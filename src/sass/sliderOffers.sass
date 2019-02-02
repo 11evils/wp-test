@@ -1,0 +1,64 @@
+.sliderOffers
+    display: flex
+    justify-content: center
+    padding-bottom: 2rem
+    width: 100%
+    &--wrapper
+        margin-top: 35px
+        text-align: center
+        width: 970px
+    &--slider
+        height: 250px
+        width: 100%
+    &--slide-1
+        background-image: url(./../img/sliderOffers/slide-1.jpg)
+        background-size: cover
+        height: 250px
+        position: relative
+        width: 100%
+    &--slide-2
+        background-image: url(./../img/sliderOffers/slide-2.jpg)
+        background-size: cover
+        height: 250px
+        position: relative
+        width: 100%
+    &--btn
+        background-color: #098a9f
+        border: none
+        border-radius: 7px
+        box-shadow: 0 0 8px #000
+        color: #fff
+        cursor: pointer
+        font-family: MuseoSansBlack
+        font-size: 16px
+        height: 45px
+        padding: 0 20px
+        position: absolute
+        &-left
+            left: 100px
+            top: 50%
+            transform: translateY(-50%)
+        &-right
+            right: 100px
+            top: 50%
+            transform: translateY(-50%)
+
+@media (max-width: 1199px)
+    .sliderOffers
+        &--wrapper
+            width: 900px // 970px
+
+@media (max-width: 991px)
+    .sliderOffers
+        &--wrapper
+            width: 700px // 900px
+        &--slider
+            height: 250px
+        &--slide-1
+            height: 200px
+        &--slide-2
+            height: 200px
+        
+@media (max-width: 767px)
+    .sliderOffers
+        display: none

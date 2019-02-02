@@ -1,0 +1,79 @@
+.contentSection
+    display: flex
+    justify-content: center
+    padding-bottom: 20px
+
+.contentSection--wrapper
+    height: 100%
+    text-align: center
+    width: 970px
+
+.contentSection--title
+    border: 2px solid #fece0a
+    border-left: none
+    border-right: none
+    color: #1f8ea4
+    display: inline-block
+    font-family: MuseoSansBold
+    font-size: 24px
+    margin: 50px 0 35px 0
+    text-align: center
+    
+.contentSection--text
+    box-sizing: border-box
+    color: #5d5d5d
+    font-family: SegoeUIRegular
+    font-size: 18px
+    font-weight: 500
+    margin-top: 10px
+    text-align: justify
+    text-indent: 40px
+    strong
+        font-weight: bold
+    a
+        color: rgb(0, 0, 238)
+        font-family: SegoeUIRegular
+        font-weight: bold
+        text-decoration: none
+
+.contentSection--reasonsTitle
+    color: rgb(93, 93, 93)
+    font-family: SegoeUIRegular
+    font-size: 18px
+    font-weight: bold
+    margin-top: 20px
+    margin-bottom: 10px
+    text-align: left
+    width: 100%
+
+.contentSection--ulReasonItem
+    box-sizing: border-box
+    padding: 0 0 0 18px
+
+.contentSection--reasonItem
+    color: rgb(93, 93, 93)
+    font-family: SegoeUIRegular
+    font-size: 16px
+    list-style-type: disc
+    margin-top: 10px
+    padding-left: 0px
+    text-align: left
+
+.contentSection--callMe
+    color: rgb(93, 93, 93)
+    font-family: SegoeUIRegular
+    font-size: 20px
+    font-weight: bold
+    margin-top: 30px
+    text-align: center
+
+@media (max-width: 1199px)
+    .contentSection--wrapper
+        padding: 0 1.5rem // new
+
+@media (max-width: 575px)
+    .contentSection--title
+        font-size: 19px
+        margin: 25px 0 10px 0
+    .contentSection--text
+        font-size: 16px

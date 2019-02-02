@@ -1,0 +1,98 @@
+.fix
+    position: fixed
+    width: 100%
+    top: 0
+    z-index: 100
+
+.desktop
+    width: 100%
+    display: flex
+    justify-content: center
+    background-color: white
+    &-header
+        width: 60.625rem
+        height: 8rem
+        display: flex
+        justify-content: space-between
+        align-items: center
+        // background-color: skyblue
+    &-logo img
+        width: 240px
+        height: 4.96rem
+    &-center-wrap
+        width: 450px
+        height: 4.96rem
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        // background-color: lightgray
+    &-workTime
+        width: 100%
+        height: 32px
+        display: flex
+        justify-content: center
+        align-items: center
+        // background-color: lightblue
+        .time-wrap
+            display: flex
+            align-items: center
+            border-top: 2px solid #d7d7d7
+            border-right: 2px solid #d7d7d7
+            border-bottom: 2px solid #d7d7d7
+            border-radius: 20px
+            padding-right: 10px
+            font-family: SegoeUISemiBold
+            color: #a6a6a6
+            font-size: 18px
+        span
+            margin-left: 15px
+    &-miniMenu
+        width: 100%
+        height: 1.125rem
+        ul
+            display: flex
+            justify-content: space-between
+            align-items: center
+            font-size: 15px
+            font-weight: 500
+            font-family: MuseoSansBold
+        a
+            text-decoration: none
+            color: black
+            &:hover
+                color: #1f8ea4
+    &-callback
+        width: 240px
+        height: 4.96rem
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        align-items: center
+        button
+            width: 190px
+            height: 34px
+            font: 16px MuseoSansBlack
+            border: none
+            border-radius: 7px
+            cursor: pointer
+            background-color: #009baf
+            outline: none
+            color: white
+            font-stretch: 100%
+            &:hover
+                background-color: #fbe239
+        .phoneNumber
+            font-size: 20px
+            font-family: MuseoSansBlack
+            text-align: center
+        .city
+            font-size: 18px
+            color: #009baf
+            font-family: MuseoSansRegular
+            font-weight: 500
+            text-transform: none
+            text-align: center
+
+@media (max-width: 1199px)
+    .fix
+        display: none

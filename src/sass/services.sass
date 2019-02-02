@@ -1,0 +1,86 @@
+.services__wrapper
+    margin: 0 auto    
+    padding: 0 15px
+    text-align: center
+    width: 970px
+
+.services__title
+    border: 2px solid #fece0a
+    border-left-width: 0
+    border-right-width: 0
+    color: #1f8ea4
+    display: inline-block
+    font-family: MuseoSansBold
+    font-size: 24px
+    margin-bottom: 35px
+    margin-top: 40px
+    padding: 3px
+    text-transform: uppercase
+    vertical-align: middle
+
+.services__images
+    display: grid
+    grid-row-gap: 30px
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    justify-items: center
+
+.serviceItem
+    background-color: white
+    box-shadow: 0 0 27px 0 rgba(31, 142, 164, 0.1)
+    height: 300px
+    width: 225px
+    &--linkImg
+        color: #1f8ea4
+        font-family: MuseoSansBold
+        font-size: 16px
+        text-decoration: none
+    &--img
+        border-radius: 5px
+        height: 130px
+        margin-top: 20px
+        margin-bottom: 10px
+        width: 200px
+    &--price
+        margin-top: 45px
+        font-size: 16px
+        font-family: SegoeUIRegular
+        color: #5d5d5d
+    &--btn
+        width: 200px
+        height: 34px
+        margin-top: 10px
+        border: none
+        border-radius: 7px
+        font-size: 16px
+        font-family: MuseoSansBlack
+        text-transform: uppercase
+        color: #231f20
+        background-color: #fbe239
+        cursor: pointer
+        transition: all .3s ease
+        &:focus
+            outline: none
+
+@media (max-width: 991px)
+    .services__wrapper
+        width: 100% // 970px
+    .services__images
+        grid-template-columns: 1fr 1fr 1fr // 1fr 1fr 1fr 1fr
+    .serviceItem
+        &:nth-child(7)
+            display: none
+        &:nth-child(8)
+            display: none
+
+@media (max-width: 767px)
+    .services__images
+        grid-template-columns: 1fr 1fr // 1fr 1fr 1fr
+    .serviceItem
+        &:nth-child(7)
+            display: block
+        &:nth-child(8)
+            display: block
+
+@media (max-width: 575px)
+    .services__images
+        grid-template-columns: 1fr
