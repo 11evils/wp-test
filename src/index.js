@@ -7,6 +7,7 @@ import './sass/mainMenu.sass';
 import './sass/mobileMenu.sass';
 import './sass/modal.sass';
 import './sass/services.sass';
+import './sass/services-usl-santeh.sass';
 import './sass/questions.sass';
 import './sass/content.sass';
 import './sass/sliderOffers.sass';

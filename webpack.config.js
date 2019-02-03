@@ -4,8 +4,19 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const webpack = require('webpack');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
+    optimization: {
+        minimizer: [
+          new UglifyJsPlugin({
+            cache: true,
+            parallel: true,
+            // sourceMap: true // set to true if you want JS source maps
+          }),
+        ]
+    },
+
     entry: [
         './src/index.js'
     ],
@@ -15,7 +26,7 @@ module.exports = {
         filename: './bundle.js'
     },
 
-    devtool: 'source-map',
+    // devtool: 'source-map',
     
     module: {
         rules: [
@@ -37,10 +48,15 @@ module.exports = {
                         loader: MiniCssExtractPlugin.loader
                     },
                     {
-                        loader: 'css-loader'
+                        loader: 'css-loader',
+                        // options: { sourceMap: true }
                     },
                     {
-                        loader: 'sass-loader'
+                        loader: 'postcss-loader'
+                    },
+                    {
+                        loader: 'sass-loader',
+                        // options: { sourceMap: true }
                     }
                 ]
             },
@@ -92,9 +108,9 @@ module.exports = {
             filename: './style.bundle.css'
             // filename: './style.bundle.css'
         }),
-        new HtmlWebpackPlugin({
-            template: './src/index.html'
-        }),
+        new HtmlWebpackPlugin({ template: './src/index.html' }),
+        new HtmlWebpackPlugin({ filename: 'uslugi-santehnika.html', template: './src/uslugi-santehnika.html' }),
+        new HtmlWebpackPlugin({ filename: 'uslugi-elektrika.html', template: './src/uslugi-elektrika.html' }),
         new CopyWebpackPlugin([
             { from: './src/favicon', to: './favicon' },
             { from: './src/html-img', to: './html-img' },
