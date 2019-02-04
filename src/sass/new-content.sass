@@ -1,0 +1,126 @@
+.new-content
+    align-items: center
+    display: flex
+    // flex-direction: column
+    justify-content: center
+    width: 100%
+    &__wrapper
+        padding: 1.25rem 0// 20px
+        width: 60.625rem // 970px
+    &__title
+        display: flex
+        justify-content: center
+    &__title-text
+        border: 2px solid #fece0a
+        border-left-width: 0
+        border-right-width: 0
+        color: #1f8ea4
+        font-family: MuseoSansBold
+        font-size: 1.5rem //  24px
+        padding: 0.1875rem // 3px
+        text-transform: uppercase
+    &__bold-text
+        border-bottom: 2px solid #009baf
+        font-family: MuseoSansBold
+        font-size: 1.125rem // 18px
+        font-weight: bold
+        padding: 1.5rem 0 0.35rem 0 //
+        text-align: justify
+        text-indent: 1.5em
+    &__wrapper-main-content
+        border-bottom: 2px solid #009baf
+        display: flex
+        padding: 1.2rem 0.3rem
+        width: 100%
+    &__wrapper-left-text
+        padding-right: 0.3rem
+        width: 50%
+    &__list
+        background-color: lighten(#fbe239, 15%)
+        border-radius: 0.5rem
+        color: #000
+        display: flex
+        flex-direction: column
+        font-family: MuseoSansRegular
+        font-size: 1rem
+        height: 100%
+        justify-content: space-between
+        text-align: justify
+        li  
+            padding: 0.3rem 0.3rem 0.3rem 1rem
+            position: relative
+            &:before
+                background-color: #000
+                border-radius: 100%
+                content: ''
+                height: 0.3rem // 5px
+                left: 0.35rem
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                width: 0.3rem //  5px
+    &__wrapper-right-img-text
+        display: flex
+        flex-direction: column
+        height: auto
+        justify-content: space-between
+        width: 50%
+        p
+            background-color: lighten(#009baf, 60%)
+            border-radius: 0.5rem
+            font-family: MuseoSansRegular
+            font-size: 1rem
+            margin-top: 0.3rem
+            padding: 0.3rem
+            text-align: justify
+            text-indent: 1.5em
+    &__img
+        border-radius: 0.5rem
+        height: 19.6875rem // 315px
+        width: 100%
+    &__bottom-text
+        background-color: rgb(236, 244, 245)
+        padding: 3rem 5rem
+        margin-top: 0.8rem
+        width: 100%
+        p
+            font-family: MuseoSansRegular
+            line-height: 1.4
+            text-align: center
+
+@media (max-width: 991px)
+    .new-content
+        &__wrapper
+            padding: 1.25rem 0// 20px
+            width: 43.75rem // 700px
+        &__img
+            height: 15rem
+    
+@media (max-width: 767px)
+    .new-content
+        &__wrapper
+            width: 100%
+            padding: 1.25rem 1rem
+        &__img
+            height: 13.5rem
+
+@media (max-width: 575px)
+    .new-content
+        &__wrapper-main-content
+            flex-wrap: wrap
+        &__wrapper-left-text
+            display: none
+        &__wrapper-right-img-text
+            width: 100%
+            p
+                padding: 0.3rem 0.1rem
+        &__img
+            height: 17rem
+        &__bottom-text
+            padding: 1rem 2rem
+
+@media (max-width: 450px)
+    .new-content
+        &__img
+            height: 14rem
+

@@ -12,7 +12,7 @@ module.exports = {
           new UglifyJsPlugin({
             cache: true,
             parallel: true,
-            // sourceMap: true // set to true if you want JS source maps
+            sourceMap: true // set to true if you want JS source maps
           }),
         ]
     },
@@ -26,7 +26,7 @@ module.exports = {
         filename: './bundle.js'
     },
 
-    // devtool: 'source-map',
+    devtool: 'source-map',
     
     module: {
         rules: [
@@ -49,14 +49,14 @@ module.exports = {
                     },
                     {
                         loader: 'css-loader',
-                        // options: { sourceMap: true }
+                        options: { sourceMap: true }
                     },
                     {
                         loader: 'postcss-loader'
                     },
                     {
                         loader: 'sass-loader',
-                        // options: { sourceMap: true }
+                        options: { sourceMap: true }
                     }
                 ]
             },

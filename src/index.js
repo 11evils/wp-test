@@ -10,6 +10,7 @@ import './sass/services.sass';
 import './sass/services-usl-santeh.sass';
 import './sass/questions.sass';
 import './sass/content.sass';
+import './sass/new-content.sass';
 import './sass/sliderOffers.sass';
 import './sass/advantages.sass';
 import './sass/aboutCompany.sass';

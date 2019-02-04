@@ -25,8 +25,12 @@
     justify-items: center
 
 .serviceItem
+    align-items: center
     background-color: white
     box-shadow: 0 0 27px 0 rgba(31, 142, 164, 0.1)
+    display: flex
+    flex-direction: column
+    justify-content: space-between
     height: 300px
     width: 225px
     &--linkImg
@@ -41,14 +45,14 @@
         margin-bottom: 10px
         width: 200px
     &--price
-        margin-top: 45px
         font-size: 16px
         font-family: SegoeUIRegular
         color: #5d5d5d
+        margin-bottom: 10px
     &--btn
         width: 200px
         height: 34px
-        margin-top: 10px
+        margin-bottom: 10px
         border: none
         border-radius: 7px
         font-size: 16px
@@ -63,23 +67,14 @@
 
 @media (max-width: 991px)
     .services__wrapper
-        width: 100% // 970px
+        width: 100%
     .services__images
-        grid-template-columns: 1fr 1fr 1fr // 1fr 1fr 1fr 1fr
-    .serviceItem
-        &:nth-child(7)
-            display: none
-        &:nth-child(8)
-            display: none
+        grid-template-columns: 1fr 1fr 1fr 
 
 @media (max-width: 767px)
     .services__images
-        grid-template-columns: 1fr 1fr // 1fr 1fr 1fr
-    .serviceItem
-        &:nth-child(7)
-            display: block
-        &:nth-child(8)
-            display: block
+        grid-template-columns: 1fr 1fr 
+
 
 @media (max-width: 575px)
     .services__images
