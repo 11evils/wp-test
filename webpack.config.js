@@ -12,7 +12,8 @@ module.exports = {
           new UglifyJsPlugin({
             cache: true,
             parallel: true,
-            sourceMap: true // set to true if you want JS source maps
+            // extractComments: true,
+            // sourceMap: true // set to true if you want JS source maps
           }),
         ]
     },
@@ -26,7 +27,7 @@ module.exports = {
         filename: './bundle.js'
     },
 
-    devtool: 'source-map',
+    // devtool: 'source-map',
     
     module: {
         rules: [
@@ -49,14 +50,14 @@ module.exports = {
                     },
                     {
                         loader: 'css-loader',
-                        options: { sourceMap: true }
+                        // options: { sourceMap: true }
                     },
                     {
                         loader: 'postcss-loader'
                     },
                     {
                         loader: 'sass-loader',
-                        options: { sourceMap: true }
+                        // options: { sourceMap: true }
                     }
                 ]
             },
@@ -110,7 +111,8 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({ template: './src/index.html' }),
         new HtmlWebpackPlugin({ filename: 'uslugi-santehnika.html', template: './src/uslugi-santehnika.html' }),
-        new HtmlWebpackPlugin({ filename: 'uslugi-elektrika.html', template: './src/uslugi-elektrika.html' }),
+        new HtmlWebpackPlugin({ filename: 'uslugi-elektrika.html',  template: './src/uslugi-elektrika.html' }),
+        new HtmlWebpackPlugin({ filename: 'master-na-chas.html',    template: './src/master-na-chas.html' }),
         new CopyWebpackPlugin([
             { from: './src/favicon', to: './favicon' },
             { from: './src/html-img', to: './html-img' },

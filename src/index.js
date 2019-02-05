@@ -102,3 +102,38 @@ jQuery(document).ready(function($) {
 });
 
 
+const pageMap = {
+    '#index-hash': '.index-hash',
+    '#main-uslugi-santehnika': '.main-uslugi-santehnika',
+    '#main-elektrik': '.main-elektrik',
+    '#main-hour-master': '.main-hour-master'
+}
+
+let currentPage =  document.querySelectorAll('.index-hash');
+
+window.addEventListener('hashchange', handlePage);
+
+handlePage();
+
+function handlePage() {
+    const pageName = pageMap[location.hash];
+    
+    if (pageName) {
+        const page = document.querySelectorAll(pageName);
+        
+        if (page) {
+            if (currentPage) {
+                for (let i = 0; i < currentPage.length; i++) {
+                    currentPage[i].classList.add('hide-section');
+                    // delete currentPage[i];
+                }
+            }
+
+            for (let i = 0; i < page.length; i++) {
+                page[i].classList.remove('hide-section');
+            }
+
+            currentPage = page;
+        }
+    }
+}
