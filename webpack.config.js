@@ -110,9 +110,6 @@ module.exports = {
             // filename: './style.bundle.css'
         }),
         new HtmlWebpackPlugin({ template: './src/index.html' }),
-        new HtmlWebpackPlugin({ filename: 'uslugi-santehnika.html', template: './src/uslugi-santehnika.html' }),
-        new HtmlWebpackPlugin({ filename: 'uslugi-elektrika.html',  template: './src/uslugi-elektrika.html' }),
-        new HtmlWebpackPlugin({ filename: 'master-na-chas.html',    template: './src/master-na-chas.html' }),
         new CopyWebpackPlugin([
             { from: './src/favicon', to: './favicon' },
             { from: './src/html-img', to: './html-img' },

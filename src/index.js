@@ -98,15 +98,26 @@ jQuery(document).ready(function($) {
         });
         
 		return false;
-	});
+    });
+    
+    $('.mainMenu').click(function() {
+        $('.sub-menu').css('visibility', 'hidden');
+        setTimeout(function() {
+            $('.sub-menu').css('visibility', '');
+        }, 100);
+    })
 });
 
 
 const pageMap = {
     '#index-hash': '.index-hash',
-    '#main-uslugi-santehnika': '.main-uslugi-santehnika',
-    '#main-elektrik': '.main-elektrik',
-    '#main-hour-master': '.main-hour-master'
+    '#santehnik-main': '.santehnik-main',
+    '#santehnik--vizovNaDom': '.santehnik--vizovNaDom',
+    '#santehnik--poVyzovu': '.santehnik--poVyzovu',
+    '#santehnik--ustSantekhniki': '.santehnik--ustSantekhniki',
+    '#santehnik--zamenaSantekhniki': '.santehnik--zamenaSantekhniki',
+    '#ehlektrik-main': '.ehlektrik-main',
+    '#master-main': '.master-main',
 }
 
 let currentPage =  document.querySelectorAll('.index-hash');

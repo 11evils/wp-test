@@ -72,12 +72,12 @@
             <div class="wrap-mainMenu">
                 <ul class="mainMenu">
                     <li class="liHight">
-                        <a class="linkHight" href="#main-uslugi-santehnika">УСЛУГИ САНТЕХНИКА</a>
+                        <a class="linkHight" href="#santehnik-main">УСЛУГИ САНТЕХНИКА</a>
                         <ul class="sub-menu">
-                            <li class="liMidle"><a class="linkMidle" href="#">Вызов сантехника на дом</a></li>
-                            <li class="liMidle"><a class="linkMidle" href="#">Сантехник по вызову</a></li>
+                            <li class="liMidle"><a class="linkMidle" href="#santehnik--vizovNaDom">Вызов сантехника на дом</a></li>
+                            <li class="liMidle"><a class="linkMidle" href="#santehnik--poVyzovu">Сантехник по вызову</a></li>
                             <li class="liMidle yellowRightArrow">
-                                <a class="linkMidle" href="#">Установка сантехники</a>
+                                <a class="linkMidle" href="#santehnik--ustSantekhniki">Установка сантехники</a>
                                 <ul class="lastSub-menu">
                                     <li class="liBottom"><a class="linkBottom" href="#">установка смесителя</a></li>
                                     <li class="liBottom"><a class="linkBottom" href="#">установка унитаза</a></li>
@@ -97,7 +97,7 @@
                                 </ul>
                             </li>
                             <li class="liMidle yellowRightArrow">
-                                <a class="linkMidle" href="#">Замена сантехники</a>
+                                <a class="linkMidle" href="#santehnik--zamenaSantekhniki">Замена сантехники</a>
                                 <ul class="lastSub-menu">
                                     <li class="liBottom"><a class="linkBottom" href="#">замена смесителя</a></li>
                                     <li class="liBottom"><a class="linkBottom" href="#">замена унитаза</a></li>
@@ -178,7 +178,7 @@
                         </ul>
                     </li>
                     <li class="liHight centerLi">
-                        <a class="linkHight" href="uslugi-elektrika.html">УСЛУГИ ЭЛЕКТРИКА</a>
+                        <a class="linkHight" href="#ehlektrik-main">УСЛУГИ ЭЛЕКТРИКА</a>
                         <ul class="sub-menu">
                                 <li class="liMidle yellowRightArrow">
                                     <a class="linkMidle" href="#">Вызов электрика на дом</a>
@@ -232,7 +232,7 @@
                         </ul>
                     </li>
                     <li class="liHight">
-                        <a class="linkHight" href="master-na-chas.html">МАСТЕР НА ЧАС</a>
+                        <a class="linkHight" href="#master-main">МАСТЕР НА ЧАС</a>
                         <ul class="sub-menu">
                             <li class="liMidle yellowLeftArrow">
                                 <a class="linkMidle" href="#">Установка бытовой техники</a>
@@ -265,6 +265,20 @@
                 </ul>
             </div>
         </div>
+
+        <div class="mobileMenu">
+            <div class="mobileMenu--wrapperPhoneHumburger">
+                <div class="mobileMenu--phone">
+                    <a href="tel:+73822259495">+7 (3822) 25-94-95</a>
+                </div>
+                <div class="mobileMenu--humburger">
+                    <img class="mobileMenu--arrow" src="./html-img/arrow.png" alt="alt">
+                </div>
+            </div>
+        </div>
+
+
+
 
         <section class="mainSection index-hash">
             <div class="mainSectionWrapper">
@@ -300,7 +314,7 @@
             </div>
         </section>
 
-        <section class="mainSection main-uslugi-santehnika hide-section">
+        <section class="mainSection santehnik-main hide-section">
                 <div class="mainSectionWrapper">
                     <h1 class="mainSection__header">Услуги сантехника</h1>
                     <p class="mainSection__text">Работаем в Томске и Томской области</p>
@@ -334,16 +348,212 @@
                 </div>
         </section>
 
-        <div class="mobileMenu">
-            <div class="mobileMenu--wrapperPhoneHumburger">
-                <div class="mobileMenu--phone">
-                    <a href="tel:+73822259495">+7 (3822) 25-94-95</a>
-                </div>
-                <div class="mobileMenu--humburger">
-                    <img class="mobileMenu--arrow" src="./html-img/arrow.png" alt="alt">
+        <section class="mainSection santehnik--vizovNaDom hide-section">
+            <div class="mainSectionWrapper">
+                <h1 class="mainSection__header">ВЫЗОВ САНТЕХНИКА НА ДОМ</h1>
+                <p class="mainSection__text">Работаем в Томске и Томской области</p>
+                <div class="wrapperMainBanner">
+                    <div class="mainBanner">
+                        <ul class="banner-info">
+                            <li class="bannerList">
+                                <img src="./html-img/car.png" alt="alt">
+                                <P class="bannerInfoText">ВЫЕЗД - БЕСПЛАТНО</P>
+                            </li>
+                            <li class="bannerList">
+                                <img src="./html-img/clock.png" alt="alt">
+                                <p class="bannerInfoText">ПРИЕЗД - 45 МИНУТ</p>
+                            </li>
+                            <li class="bannerList">
+                                <img src="./html-img/doc.png" alt="alt">
+                                <p class="bannerInfoText">Гарантия до 3 лет</p>
+                            </li>
+                        </ul>
+
+
+                        <form id="mainForm" class="mainForm" name="mainForm">
+                            <input id="mainPhoneInput" class="mainForm__input" type="text" name="mainPhone" placeholder="+7 (___) ___-____">
+                            <button class="mainForm__button">Заказать звонок</button>
+                        </form>
+
+
+                        <p class="recallText">Перезвоним в течение 1 минуты</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section class="mainSection santehnik--poVyzovu hide-section">
+            <div class="mainSectionWrapper">
+                <h1 class="mainSection__header">сантехник по вызову</h1>
+                <p class="mainSection__text">Работаем в Томске и Томской области</p>
+                <div class="wrapperMainBanner">
+                    <div class="mainBanner">
+                        <ul class="banner-info">
+                            <li class="bannerList">
+                                <img src="./html-img/car.png" alt="alt">
+                                <P class="bannerInfoText">ВЫЕЗД - БЕСПЛАТНО</P>
+                            </li>
+                            <li class="bannerList">
+                                <img src="./html-img/clock.png" alt="alt">
+                                <p class="bannerInfoText">ПРИЕЗД - 45 МИНУТ</p>
+                            </li>
+                            <li class="bannerList">
+                                <img src="./html-img/doc.png" alt="alt">
+                                <p class="bannerInfoText">Гарантия до 3 лет</p>
+                            </li>
+                        </ul>
+
+
+                        <form id="mainForm" class="mainForm" name="mainForm">
+                            <input id="mainPhoneInput" class="mainForm__input" type="text" name="mainPhone" placeholder="+7 (___) ___-____">
+                            <button class="mainForm__button">Заказать звонок</button>
+                        </form>
+
+
+                        <p class="recallText">Перезвоним в течение 1 минуты</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mainSection santehnik--ustSantekhniki hide-section">
+            <div class="mainSectionWrapper">
+                <h1 class="mainSection__header">установка сантехники</h1>
+                <p class="mainSection__text">Работаем в Томске и Томской области</p>
+                <div class="wrapperMainBanner">
+                    <div class="mainBanner">
+                        <ul class="banner-info">
+                            <li class="bannerList">
+                                <img src="./html-img/car.png" alt="alt">
+                                <P class="bannerInfoText">ВЫЕЗД - БЕСПЛАТНО</P>
+                            </li>
+                            <li class="bannerList">
+                                <img src="./html-img/clock.png" alt="alt">
+                                <p class="bannerInfoText">ПРИЕЗД - 45 МИНУТ</p>
+                            </li>
+                            <li class="bannerList">
+                                <img src="./html-img/doc.png" alt="alt">
+                                <p class="bannerInfoText">Гарантия до 3 лет</p>
+                            </li>
+                        </ul>
+
+
+                        <form id="mainForm" class="mainForm" name="mainForm">
+                            <input id="mainPhoneInput" class="mainForm__input" type="text" name="mainPhone" placeholder="+7 (___) ___-____">
+                            <button class="mainForm__button">Заказать звонок</button>
+                        </form>
+
+
+                        <p class="recallText">Перезвоним в течение 1 минуты</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mainSection santehnik--zamenaSantekhniki hide-section">
+            <div class="mainSectionWrapper">
+                <h1 class="mainSection__header">замена сантехники</h1>
+                <p class="mainSection__text">Работаем в Томске и Томской области</p>
+                <div class="wrapperMainBanner">
+                    <div class="mainBanner">
+                        <ul class="banner-info">
+                            <li class="bannerList">
+                                <img src="./html-img/car.png" alt="alt">
+                                <P class="bannerInfoText">ВЫЕЗД - БЕСПЛАТНО</P>
+                            </li>
+                            <li class="bannerList">
+                                <img src="./html-img/clock.png" alt="alt">
+                                <p class="bannerInfoText">ПРИЕЗД - 45 МИНУТ</p>
+                            </li>
+                            <li class="bannerList">
+                                <img src="./html-img/doc.png" alt="alt">
+                                <p class="bannerInfoText">Гарантия до 3 лет</p>
+                            </li>
+                        </ul>
+
+
+                        <form id="mainForm" class="mainForm" name="mainForm">
+                            <input id="mainPhoneInput" class="mainForm__input" type="text" name="mainPhone" placeholder="+7 (___) ___-____">
+                            <button class="mainForm__button">Заказать звонок</button>
+                        </form>
+
+
+                        <p class="recallText">Перезвоним в течение 1 минуты</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mainSection mainSection_usl-elektrika ehlektrik-main hide-section">
+            <div class="mainSectionWrapper">
+                <h1 class="mainSection__header">Услуги электрика</h1>
+                <p class="mainSection__text">Работаем в Томске и Томской области</p>
+                <div class="wrapperMainBanner">
+                    <div class="mainBanner">
+                        <ul class="banner-info">
+                            <li class="bannerList">
+                                <img src="./html-img/car.png" alt="alt">
+                                <P class="bannerInfoText">ВЫЕЗД - БЕСПЛАТНО</P>
+                            </li>
+                            <li class="bannerList">
+                                <img src="./html-img/dopusk.png" alt="alt">
+                                <p class="bannerInfoText">мастера с допусками</p>
+                            </li>
+                            <li class="bannerList">
+                                <img src="./html-img/doc.png" alt="alt">
+                                <p class="bannerInfoText">Гарантия до 5 лет</p>
+                            </li>
+                        </ul>
+
+
+                        <form id="mainForm" class="mainForm" name="mainForm">
+                            <input id="mainPhoneInput" class="mainForm__input" type="text" name="mainPhone" placeholder="+7 (___) ___-____">
+                            <button class="mainForm__button">Заказать звонок</button>
+                        </form>
+
+
+                        <p class="recallText">Перезвоним в течение 1 минуты</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mainSection mainSection_master-na-chas master-main hide-section">
+            <div class="mainSectionWrapper">
+                <h1 class="mainSection__header">Мастер на час</h1>
+                <p class="mainSection__text">Работаем в Томске и Томской области</p>
+                <div class="wrapperMainBanner">
+                    <div class="mainBanner">
+                        <ul class="banner-info">
+                            <li class="bannerList">
+                                <img src="./html-img/car.png" alt="alt">
+                                <P class="bannerInfoText">ВЫЕЗД - БЕСПЛАТНО</P>
+                            </li>
+                            <li class="bannerList">
+                                <img src="./html-img/clock.png" alt="alt">
+                                <p class="bannerInfoText">приезд - 45 минут</p>
+                            </li>
+                            <li class="bannerList">
+                                <img src="./html-img/doc.png" alt="alt">
+                                <p class="bannerInfoText">Гарантия до 3 лет</p>
+                            </li>
+                        </ul>
+
+
+                        <form id="mainForm" class="mainForm" name="mainForm">
+                            <input id="mainPhoneInput" class="mainForm__input" type="text" name="mainPhone" placeholder="+7 (___) ___-____">
+                            <button class="mainForm__button">Заказать звонок</button>
+                        </form>
+
+
+                        <p class="recallText">Перезвоним в течение 1 минуты</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
 
         <section class="services index-hash">
             <div class="services__wrapper">
@@ -442,7 +652,7 @@
             </div>
         </section>
 
-        <section class="services-usl-santeh main-uslugi-santehnika hide-section">
+        <section class="services-usl-santeh santehnik-main hide-section">
             <div class="services-usl-santeh__wrapper">
                 <h2 class="services-usl-santeh__title">ЦЕНЫ НА УСЛУГИ САНТЕХНИКА</h2>
                 <div class="services-usl-santeh__images">
@@ -627,6 +837,855 @@
             </div>
         </section>
 
+        <section class="services santehnik--vizovNaDom hide-section">
+            <div class="services-usl-santeh__wrapper">
+                <h2 class="services-usl-santeh__title">ЦЕНЫ НА вызов САНТЕХНИКА на дом</h2>
+                <div class="services-usl-santeh__images">
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/ustanovka-santehniki.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">установка сантехники</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 590 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="установка сантехники">заказать услугу</button>
+                        </div> 
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/razvodka-trub.png" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName showModal">разводка труб</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 390 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="разводка труб">заказать услугу</button>
+                        </div>
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/ustranenie-zasorov.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Устранение засоров</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 790 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Устранение засоров">заказать услугу</button>
+                        </div>
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/ustranenie-protechek.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Устранение протечек</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 490 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal"  data-modalTitle="устранение протечек">заказать услугу</button>
+                        </div>
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/remont-unitaza.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Ремонт унитаза</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 490 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Ремонт унитаза">заказать услугу</button>
+                        </div>
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/zamena-sifona.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Замена сифона</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 290 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Замена сифона">заказать услугу</button>
+                        </div>
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/remont-smesitelya.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Ремонт смесителя</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 290 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Ремонт смесителя">заказать услугу</button>
+                        </div>
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/remont-trub-2.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Ремонт труб</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 490 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Ремонт труб">заказать услугу</button>
+                        </div>
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/ustanovka-smesitelia.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Установка смесителя</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 590 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="установка смесителя">заказать услугу</button>
+                        </div>  
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/ustanovka-vanni.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Установка ванны</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 1490 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="установка ванны">заказать услугу</button>
+                        </div>
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/zamena-unitaza.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Замена унитаза</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 990 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Замена унитаза">заказать услугу</button>
+                        </div>
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/ustanovka-dushevoi-cabinei.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Установка душевой кабины</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 1990 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Установка душевой кабины">заказать услугу</button>
+                        </div>
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/zamena-radiatora-otoplenia.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Замена радиатора отопления</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 1490 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Замена радиатора отопления">заказать услугу</button>
+                        </div>
+                    </div>
+
+                </div>  
+            </div>
+        </section>
+
+        <section class="services santehnik--poVyzovu hide-section">
+            <div class="services-usl-santeh__wrapper">
+                <h2 class="services-usl-santeh__title">ЦЕНЫ НА услуги САНТЕХНИКА</h2>
+                <div class="services-usl-santeh__images">
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/remont-santekhniki.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">ремонт сантехники</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 290 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="ремонт сантехники">заказать услугу</button>
+                        </div> 
+                    </div>
+
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/ustanovka-santekhniki.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">установка сантехники</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 590 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="установка сантехники">заказать услугу</button>
+                        </div> 
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/razvodka-trub.png" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName showModal">разводка труб</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 390 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="разводка труб">заказать услугу</button>
+                        </div>
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/ustranenie-zasorov.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Устранение засоров</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 790 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Устранение засоров">заказать услугу</button>
+                        </div>
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/ustranenie-protechek.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Устранение протечек</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 490 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal"  data-modalTitle="устранение протечек">заказать услугу</button>
+                        </div>
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/remont-installyatsii-unitaza.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">ремонт инсталяции унитаза</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 990 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="ремонт инсталяции унитаза">заказать услугу</button>
+                        </div> 
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/ustanovka-dushevoi-cabinei.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Установка душевой кабины</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 1990 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Установка душевой кабины">заказать услугу</button>
+                        </div>
+                    </div>
+                    
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/remont-trub-2.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Ремонт труб</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 490 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Ремонт труб">заказать услугу</button>
+                        </div>
+                    </div>     
+                </div>  
+            </div>
+        </section>
+
+        <section class="services santehnik--ustSantekhniki hide-section">
+            <div class="services-usl-santeh__wrapper">
+                <h2 class="services-usl-santeh__title">цены на установку сантехники</h2>
+                <div class="services-usl-santeh__images">
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/ustanovka-smesitelya.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">установка смесителя</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 590 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="установка смесителя">заказать услугу</button>
+                        </div> 
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/ustanovka-vanny.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">установка ванны</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 990 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="установка ванны">заказать услугу</button>
+                        </div> 
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/ustanovka-unitaza.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName showModal">установка унитаза</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 990 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="установка унитаза">заказать услугу</button>
+                        </div>
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/remont-installyatsii-unitaza.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">установка инсталяции унитаза</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 1390 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="установка инсталяции унитаза">заказать услугу</button>
+                        </div> 
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/ustanovka-dushevoj-kabiny-2.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">установка душевой кабины</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 1990 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="установка душевой кабины">заказать услугу</button>
+                        </div> 
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/ustanovka-bide.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName showModal">установка биде</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 1390 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="установка биде">заказать услугу</button>
+                        </div>
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/ustanovka-polotencesushitelya.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Установка полотенцесушителя</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 990 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Установка полотенцесушителя">заказать услугу</button>
+                        </div>
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/ustanovka-radiatora-otopleniya.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Устаустановка радиатора отопления</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 1490 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal"  data-modalTitle="установка радиатора отопления">заказать услугу</button>
+                        </div>
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/ustanovka-dzhakuzi.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">установка джакузи</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 1490 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="установка джакузи">заказать услугу</button>
+                        </div> 
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/ustanovka-mojki.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Установка мойки</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 790 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Установка мойки">заказать услугу</button>
+                        </div>
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/ustanovka-solofita.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Установка водонагревателя</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 1990 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Установка водонагревателя">заказать услугу</button>
+                        </div>
+                    </div>   
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/ustanovka-vodonagrevatelya.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Установка солофита</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 990 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Установка солофита">заказать услугу</button>
+                        </div>
+                    </div>    
+   
+                </div>  
+            </div>
+        </section>
+
+        <section class="services santehnik--zamenaSantekhniki hide-section">
+            <div class="services-usl-santeh__wrapper">
+                <h2 class="services-usl-santeh__title">цены на установку сантехники</h2>
+                <div class="services-usl-santeh__images">
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/zamena-unitaza.jpeg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">замена унитаза</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 1290 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="замена унитаза">заказать услугу</button>
+                        </div> 
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/zamena-smesitelya.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">замена смесителя</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 1080 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="замена смесителя">заказать услугу</button>
+                        </div> 
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/zamena-dushevoj-kabiny.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName showModal">замена душевой кабины</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 2490 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="замена душевой кабины">заказать услугу</button>
+                        </div>
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/remont-polotencesushitelia.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">замена полотенцесушителя</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 1990 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="замена полотенцесушителя">заказать услугу</button>
+                        </div> 
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/zamena-vanny.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">замена ванны</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 1290 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="замена ванны">заказать услугу</button>
+                        </div> 
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/ustanovka-instalyacii-unitaza.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName showModal">замена инсталяции</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 1980 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="замена инсталяции">заказать услугу</button>
+                        </div>
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/zamena-dzhakuzi.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">замена джакузи</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 1990 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="замена джакузи">заказать услугу</button>
+                        </div>
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/zamena-bide.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">замена биде</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 1490 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal"  data-modalTitle="замена биде">заказать услугу</button>
+                        </div>
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/zamena-rakoviny.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">замена раковины</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 990 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="замена раковины">заказать услугу</button>
+                        </div> 
+                    </div>
+    
+   
+                </div>  
+            </div>
+        </section>
+
+        <section class="services-usl-santeh ehlektrik-main hide-section">
+            <div class="services-usl-santeh__wrapper">
+                <h2 class="services-usl-santeh__title">ЦЕНЫ НА УСЛУГИ САНТЕХНИКА</h2>
+                <div class="services-usl-santeh__images">
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-elektrika/diagnostika-elektroprovodki.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Диагностика электропроводки</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 990 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Диагностика электропроводки">заказать услугу</button>
+                        </div> 
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-elektrika/ustranenie-zamykaniya.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Устранение замыкания</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 990 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Устранение замыкания">заказать услугу</button>
+                        </div> 
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-elektrika/sborka-shitka.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Сборка щитка</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 1490 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Сборка щитка">заказать услугу</button>
+                        </div> 
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-elektrika/stroblenie.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Штробление</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 50 рублей/метр</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Штробление">заказать услугу</button>
+                        </div> 
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-elektrika/ustanovka-rozetki.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Установка розетки</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 290 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Установка розетки">заказать услугу</button>
+                        </div> 
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-elektrika/ustanovka-vikluchatela.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Установка выключателя</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 290 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Установка выключателя">заказать услугу</button>
+                        </div> 
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-elektrika/remont-rozetki.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Ремонт розетки</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 290 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Ремонт розетки">заказать услугу</button>
+                        </div> 
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-elektrika/remont-vickluchatela.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Ремонт выключателя</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 290 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Ремонт выключателя">заказать услугу</button>
+                        </div> 
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-elektrika/ustanovka-lustr.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Установка люстр</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 990 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Установка люстр">заказать услугу</button>
+                        </div> 
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-elektrika/ustanovka-svetilnika.jpeg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Установка светильника</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 590 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Установка светильника">заказать услугу</button>
+                        </div>
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-elektrika/montazh-UZO.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Монтаж УЗО</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 490 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Монтаж УЗО">заказать услугу</button>
+                        </div>
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-elektrika/montazsh-avtomata.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Монтаж автомата</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 490 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Монтаж автомата">заказать услугу</button>
+                        </div>
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-elektrika/montazsh-teplogo-pola.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Монтаж теплого пола</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 490 рублей м/кв.</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Монтаж теплого пола">заказать услугу</button>
+                        </div>
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-elektrika/prokladka-elektroprovodki.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Прокладка электропроводки</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 100 рублей/метр</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Прокладка электропроводки">заказать услугу</button>
+                        </div>
+                    </div>
+
+                </div>  
+            </div>
+        </section>
+
+        <section class="services-usl-santeh master-main hide-section">
+            <div class="services-usl-santeh__wrapper">
+                <h2 class="services-usl-santeh__title">ЦЕНЫ НА УСЛУГИ МАСТЕР НА ЧАС</h2>
+                <div class="services-usl-santeh__images">
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-elektrika/ustanovka-rozetki.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Установка розеток</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 290 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Установка розеток">заказать услугу</button>
+                        </div> 
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-elektrika/ustanovka-vikluchatela.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Установка выключателя</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 290 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Установка выключателя">заказать услугу</button>
+                        </div> 
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-elektrika/ustanovka-lustr.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Установка люстры</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 990 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Установка люстры">заказать услугу</button>
+                        </div> 
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-elektrika/sborka-shitka.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Установка щитка</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 990 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Установка щитка">заказать услугу</button>
+                        </div> 
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/ustanovka-smesitelia.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Установка смесителя</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 590 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="установка смесителя">заказать услугу</button>
+                        </div>  
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/services-usl-santeh/ustranenie-zasorov.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Устранение засоров</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 790 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Устранение засоров">заказать услугу</button>
+                        </div>
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/master-na-chas/remont-bachka-unitaza.jpeg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Ремонт бочка унитаза</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 490 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Ремонт бочка унитаза">заказать услугу</button>
+                        </div>
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/master-na-chas/ustanovka-unitaza.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Установка унитаза</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 990 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Установка унитаза">заказать услугу</button>
+                        </div>
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/master-na-chas/ustanovka-mezhkomnatnoi-dveri.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Установка межкомнатной двери</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 1990 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Установка межкомнатной двери">заказать услугу</button>
+                        </div>
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/master-na-chas/ustanovka-vhodnoi-dveri.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Установка входной двери</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 2990 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Установка входной двери">заказать услугу</button>
+                        </div>
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/master-na-chas/ustanovka-zamka.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Установка замка</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 990 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Установка замка">заказать услугу</button>
+                        </div>
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/master-na-chas/vskritie-zamka.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Вскрытие замка</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 1490 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Вскрытие замка">заказать услугу</button>
+                        </div>
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/master-na-chas/sborka-shkafa-kupe.jpeg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Сборка шкафа купе</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 1490 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Сборка шкафа купе">заказать услугу</button>
+                        </div>
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/master-na-chas/montazh-zerkala.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Монтаж зеркала</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 990 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Монтаж зеркала">заказать услугу</button>
+                        </div>
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/master-na-chas/montazh-polki.jpeg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Монтаж полки</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 490 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Монтаж полки">заказать услугу</button>
+                        </div>
+                    </div>
+
+                    <div class="serviceItem-usl-santeh">
+                        <a class="serviceItem-usl-santeh--linkImg" href="#">
+                            <img class="serviceItem-usl-santeh--img" src="./html-img/master-na-chas/ustanovka-tumbi.jpg" alt="alt">
+                            <p class="seviceItem-usl-santeh--textName">Установка тумбы</p>
+                        </a>
+                        <div class="wrapper-price-and-btn">
+                            <p class="serviceItem-usl-santeh--price">от 990 рублей</p>
+                            <button class="serviceItem-usl-santeh--btn showModal" data-modalTitle="Установка тумбы">заказать услугу</button>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+
+
+
+
         <section class="questions">
             <div class="questions--wrapper">
                 <p class="questions--textQuestion">Остались<br>вопросы?</p>
@@ -643,6 +1702,11 @@
 
             </div>
         </section>
+
+
+
+
+
 
         <section class="contentSection index-hash">
             <div class="contentSection--wrapper">
@@ -693,7 +1757,7 @@
             </div>
         </section>
 
-        <section class="new-content main-uslugi-santehnika hide-section">
+        <section class="new-content santehnik-main hide-section">
             <div class="new-content__wrapper">
                 <div class="new-content__title">
                     <h1 class="new-content__title-text">услуги сантехника</h1>
@@ -747,6 +1811,335 @@
                 </div>
             </div>
         </section>
+
+        <section class="new-content santehnik--vizovNaDom hide-section">
+            <div class="new-content__wrapper">
+                <div class="new-content__title">
+                    <h1 class="new-content__title-text">вызов сантехника на дом</h1>
+                </div>
+                <!-- <p class="new-content__bold-text">
+                    Услуги сантехника — это важнейшее из бытовых услуг в компании Центр бытовых услуг.
+                    Проблеме водоснабжения, наша компания уделяет особое внимание. Услуги сантехника в
+                    Томске и Томской области — специалист выезжает к Вам совершенно
+                    бесплатно, на месте производит оценку предстоящих работ, и если Вас все устраивает,
+                    то сразу же готов приступить к выполнению.
+                </p> -->
+                <!-- <div class="new-content__wrapper-main-content">
+                    <div class="new-content__wrapper-left-text">
+                        <ul class="new-content__list">
+                            <li>Устранение протечек в системах отопления и водоснабжения.</li>
+                            <li>Устранения засоров в ванной и на кухне.</li>
+                            <li>Установка сантехники.</li>
+                            <li>Ремонт сантехники.</li>
+                            <li>Замена сантехники в ванной и на кухне.</li>
+                            <li>Замена радиаторов отопления в квартире и многое другое.</li>
+                            <li>Разводка труб.</li>
+                            <li>Гарантию на все выполненные работы.</li>
+                            <li>Круглосуточный вызов сантехника на дом и выезд специалистов для решения проблем.</li>
+                            <li>Составление подробного проекта предстоящих работ, детализированную смету предоставляемых услуг, закупку и доставку материалов на место выполнения работ.</li>
+                            <li>Использование специалистами безопасных и сертифицированных материалов.</li>
+                            <li>Возможность оплаты любым удобным способом.</li>
+                        </ul>
+                    </div>
+                    <div class="new-content__wrapper-right-img-text">
+                        <img src="./html-img/services-usl-santeh/uslugi-santehnika-content.jpg" alt="alt" class="new-content__img">
+                        <p>
+                            Вызов сантехника на дом для любой сантехнической помощи по дому — от установки
+                            смесителя до ремонта ванны под ключ. Сантехнические работы любой сложности наши
+                            специалисты выполнят быстро и качественно, и предоставят Вам гарантийный талон и
+                            дисконтную карту.
+                        </p>
+                        <p>
+                            Так же, у компании имеется СРО, что позволяет выполнять строительство,
+                            реконструкцию, капитальный ремонт объекта капитального строительства, стоимость
+                            которого по одному договору не превышает 60 000 000 рублей.
+                        </p>
+                    </div>
+                </div> -->
+                <div class="new-content__bottom-text">
+                    <p>
+                        Сантехник на дом прибудет к Вам строго в то время, которое вы обозначите в заявке.
+                        Срочный приезд сантехника осуществляется в течение 45 минут. Гарантия до 3 лет.
+                        Так же, доводим до Вашего сведения, все работы выполняемые специалистами ООО «Центр Бытовых Услуг»
+                        застрахованы на 3 000 000 рублей.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="new-content santehnik--poVyzovu hide-section">
+            <div class="new-content__wrapper">
+                <div class="new-content__title">
+                    <h1 class="new-content__title-text">вызов сантехника на дом</h1>
+                </div>
+                <!-- <p class="new-content__bold-text">
+                    Услуги сантехника — это важнейшее из бытовых услуг в компании Центр бытовых услуг.
+                    Проблеме водоснабжения, наша компания уделяет особое внимание. Услуги сантехника в
+                    Томске и Томской области — специалист выезжает к Вам совершенно
+                    бесплатно, на месте производит оценку предстоящих работ, и если Вас все устраивает,
+                    то сразу же готов приступить к выполнению.
+                </p> -->
+                <!-- <div class="new-content__wrapper-main-content">
+                    <div class="new-content__wrapper-left-text">
+                        <ul class="new-content__list">
+                            <li>Устранение протечек в системах отопления и водоснабжения.</li>
+                            <li>Устранения засоров в ванной и на кухне.</li>
+                            <li>Установка сантехники.</li>
+                            <li>Ремонт сантехники.</li>
+                            <li>Замена сантехники в ванной и на кухне.</li>
+                            <li>Замена радиаторов отопления в квартире и многое другое.</li>
+                            <li>Разводка труб.</li>
+                            <li>Гарантию на все выполненные работы.</li>
+                            <li>Круглосуточный вызов сантехника на дом и выезд специалистов для решения проблем.</li>
+                            <li>Составление подробного проекта предстоящих работ, детализированную смету предоставляемых услуг, закупку и доставку материалов на место выполнения работ.</li>
+                            <li>Использование специалистами безопасных и сертифицированных материалов.</li>
+                            <li>Возможность оплаты любым удобным способом.</li>
+                        </ul>
+                    </div>
+                    <div class="new-content__wrapper-right-img-text">
+                        <img src="./html-img/services-usl-santeh/uslugi-santehnika-content.jpg" alt="alt" class="new-content__img">
+                        <p>
+                            Вызов сантехника на дом для любой сантехнической помощи по дому — от установки
+                            смесителя до ремонта ванны под ключ. Сантехнические работы любой сложности наши
+                            специалисты выполнят быстро и качественно, и предоставят Вам гарантийный талон и
+                            дисконтную карту.
+                        </p>
+                        <p>
+                            Так же, у компании имеется СРО, что позволяет выполнять строительство,
+                            реконструкцию, капитальный ремонт объекта капитального строительства, стоимость
+                            которого по одному договору не превышает 60 000 000 рублей.
+                        </p>
+                    </div>
+                </div> -->
+                <div class="new-content__bottom-text">
+                    <p>
+                        Сантехник на дом прибудет к Вам строго в то время, которое вы обозначите в заявке.
+                        Срочный приезд сантехника осуществляется в течение 45 минут. Гарантия до 3 лет.
+                        Так же, доводим до Вашего сведения, все работы выполняемые специалистами ООО «Центр Бытовых Услуг»
+                        застрахованы на 3 000 000 рублей.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="new-content santehnik--ustSantekhniki hide-section">
+            <div class="new-content__wrapper">
+                <div class="new-content__title">
+                    <h1 class="new-content__title-text">установка сантехники</h1>
+                </div>
+                <p class="new-content__bold-text">
+                    Установка сантехники в ванной комнате является завершающим штрихом в ремонте.
+                    Каждый прибор встаёт на свои места, и дизайн-проект из нарисованного превращается в реальность.
+                    Если вас интересует установка сантехники под ключ, наша компания может вам помочь.
+                    Расценки и прайс-листы на установку той или иной сантехники вы можете найти на нашем сайте.
+                </p>
+                <div class="new-content__wrapper-main-content">
+                    <div class="new-content__wrapper-left-text">
+                        <ul class="new-content__list">
+                            <li>Более 8 лет опыта работы в сфере сантехники.</li>
+                            <li>До 3-х лет гарантии на все виды услуг.</li>
+                            <li>Бесплатный выезд мастера на дом.</li>
+                            <li>«Центр бытовых услуг» оснащен лучшим оборудованием и инструментом.</li>
+                            <li>Замена сантехники в ванной и на кухне.</li>
+                            <li>Мы работаем круглосуточно, без выходных и праздников.</li>
+                            <li>Покупку и доставку необходимого материала и комплектующих для ремонта можем взять на себя.</li>
+                            <li>Установка элитной сантехники.</li>
+                            <li>Установка фильтров.</li>
+                            <li>Для постоянных клиентов скидки.</li>
+                            <li>Использование специалистами безопасных и сертифицированных материалов.</li>
+                            <li>Возможность оплаты любым удобным способом.</li>
+                        </ul>
+                    </div>
+                    <div class="new-content__wrapper-right-img-text">
+                        <img src="./html-img/services-usl-santeh/kontent-ustanovka-santekhniki.png" alt="alt" class="new-content__img">
+                        <p>
+                            Мы оказываем полный спектр услуг по установке любых видов сантехники.
+                            Работаем как с физическими, так и с юридическими лицами. Опыт наших мастеров
+                            гарантирует качество и надежность всех выполненных нами работ.
+                        </p>
+                        <p>
+                            Вызов сантехника на дом для любой сантехнической помощи по дому — от установки
+                            смесителя до ремонта ванны под ключ. Сантехнические работы любой сложности наши
+                            специалисты выполнят быстро и качественно, и предоставят Вам гарантийный талон и
+                            дисконтную карту.
+                        </p>
+                    </div>
+                </div>
+                <div class="new-content__bottom-text">
+                    <p>
+                        Сантехник на дом прибудет к Вам строго в то время, которое вы обозначите в заявке.
+                        Срочный приезд сантехника осуществляется в течение 45 минут. Гарантия до 3 лет.
+                        Так же, доводим до Вашего сведения, все работы выполняемые специалистами ООО «Центр Бытовых Услуг»
+                        застрахованы на 3 000 000 рублей.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="new-content santehnik--zamenaSantekhniki hide-section">
+            <div class="new-content__wrapper">
+                <div class="new-content__title">
+                    <h1 class="new-content__title-text">замена сантехники сантехники</h1>
+                </div>
+                <p class="new-content__bold-text">
+                    Сантехнические работы стали востребованы в настоящее время.
+                    Ценятся специалисты, умеющие быстро и профессионально справляться с поставленными задачами.
+                    Такие мастера работают в нашей компании. К нашим преимуществам относится и доступная цена на замену сантехники в Москве.
+                    Демонтажные и монтажные работы осуществляют компетентные специалисты. Мы оказываем услуги и в случае аварийной и экстренной ситуации.
+                </p>
+                <div class="new-content__wrapper-main-content">
+                    <div class="new-content__wrapper-left-text">
+                        <ul class="new-content__list">
+                            <li>Более 8 лет опыта работы в сфере сантехники.</li>
+                            <li>До 3-х лет гарантии на все виды услуг.</li>
+                            <li>Бесплатный выезд мастера на дом.</li>
+                            <li>Прибытие в любую точку города</li>
+                            <li>Работы выполняются с низким уровнем шума.</li>
+                            <li>Мы работаем круглосуточно, без выходных и праздников.</li>
+                            <li>Покупку и доставку необходимого материала и комплектующих для ремонта можем взять на себя.</li>
+                            <li>УУборка по завершении процедуры.</li>
+                            <li>Профессиональный подход и грамотная планировка.</li>
+                            <li>Для постоянных клиентов скидки.</li>
+                            <li>Использование специалистами безопасных и сертифицированных материалов.</li>
+                            <li>Возможность оплаты любым удобным способом.</li>
+                        </ul>
+                    </div>
+                    <div class="new-content__wrapper-right-img-text">
+                        <img src="./html-img/services-usl-santeh/kontent-ustanovka-santekhniki.png" alt="alt" class="new-content__img">
+                        <p>
+                            Мы оказываем полный спектр услуг по замене любых видов сантехники.
+                            Работаем как с физическими, так и с юридическими лицами. Опыт наших мастеров
+                            гарантирует качество и надежность всех выполненных нами работ.
+                        </p>
+                        <p>
+                            Вызов сантехника на дом для любой сантехнической помощи по дому — от установки
+                            смесителя до ремонта ванны под ключ. Сантехнические работы любой сложности наши
+                            специалисты выполнят быстро и качественно, и предоставят Вам гарантийный талон и
+                            дисконтную карту.
+                        </p>
+                    </div>
+                </div>
+                <div class="new-content__bottom-text">
+                    <p>
+                        Сантехник на дом прибудет к Вам строго в то время, которое вы обозначите в заявке.
+                        Срочный приезд сантехника осуществляется в течение 45 минут. Гарантия до 3 лет.
+                        Так же, доводим до Вашего сведения, все работы выполняемые специалистами ООО «Центр Бытовых Услуг»
+                        застрахованы на 3 000 000 рублей.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="new-content ehlektrik-main hide-section">
+            <div class="new-content__wrapper">
+                <div class="new-content__title">
+                    <h1 class="new-content__title-text">услуги электрика</h1>
+                </div>
+                <p class="new-content__bold-text">
+                    Услуги электрика - это важнейшее из составляющих нашей работы,
+                    направление не менее важное, нежели услуги сантехника. Электрик на дом,
+                    который решит любой вопрос по электрике в доме, и оперативно прибудет
+                    на указанный Вами в заявке адрес - это необходимая услуга, которую с
+                    удовольствием и с большой ответственностью выполняют специалисты компании.
+                </p>
+                <div class="new-content__wrapper-main-content">
+                    <div class="new-content__wrapper-left-text">
+                        <ul class="new-content__list">
+                            <li>Квалифицированная помощь профессионалов.</li>
+                            <li>Электромонтажные работы любой сложности.</li>
+                            <li>Наличие всех необходимых лицензий.</li>
+                            <li>Ориентируемся на качество.</li>
+                            <li>Срочный приезд в течение 45 минут.</li>
+                            <li>Производство полной комплексной диагностики.</li>
+                            <li>Гарантию на все выполненные работы.</li>
+                            <li>Круглосуточный вызов электрика на дом и выезд специалистов для решения проблем.</li>
+                            <li>Составление подробного проекта предстоящих работ, детализированную смету предоставляемых услуг, закупку и доставку материалов на место выполнения работ.</li>
+                            <li>Использование специалистами безопасных и сертифицированных материалов.</li>
+                            <li>Возможность оплаты любым удобным способом.</li>
+                        </ul>
+                    </div>
+                    <div class="new-content__wrapper-right-img-text">
+                        <img src="./html-img/services-usl-elektrika/uslugi-elektrika-content.jpg" alt="alt" class="new-content__img">
+                        <p>
+                            В нашей компании работают только квалифицированные мастера, имеющие немалый опыт работы в данной сфере.
+                            Благодаря практическим навыкам и знаниям они без проблем справятся с любой поставленной задачей
+                            на высшем уровне.
+                        </p>
+                        <p>
+                            Мастер приедет к вам с профессиональным оборудованием и материалами, и оперативно выполнит свою работу.
+                            Стоимость услуги будет озвучена только после того, как будет произведена полная комплексная диагностика.
+                            Если клиента все устраивает, то специалист приступает к своей непосредственной работе,
+                            дополнительно оговаривая все тонкости и детали в процессе выполнения работы.
+                        </p>
+                    </div>
+                </div>
+                <div class="new-content__bottom-text">
+                    <p>
+                        Все указанные выше услуги оказываются нами на протяжении длительного периода времени.
+                        Мы сумели зарекомендовать себя на рынке предоставления услуг по электрике исключительно
+                        с положительной стороны. Комплексный подход к решению различных неполадок в
+                        работе электрики – конкурентоспособное преимущество нашей компании.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="new-content master-main hide-section">
+            <div class="new-content__wrapper">
+                <div class="new-content__title">
+                    <h1 class="new-content__title-text">услуги электрика</h1>
+                </div>
+                <p class="new-content__bold-text">
+                    Центр бытовых услуг - это команда многопрофильных специалистов,
+                    которые способны произвести любые виды работ в рамках часа.
+                    При этом мы индивидуально подходим к решению любой проблемы,
+                    при необходимости мастера могут провести комплекс работ и решить
+                    множество насущных вопросов.
+                </p>
+                <div class="new-content__wrapper-main-content">
+                    <div class="new-content__wrapper-left-text">
+                        <ul class="new-content__list">
+                            <li>Высокая скорость выполнения ремонтных работ.</li>
+                            <li>Электромонтажные работы любой сложности.</li>
+                            <li>Фиксированная стоимость.</li>
+                            <li>Разнообразие работ, которые могут быть отнесены к мелкому ремонту.</li>
+                            <li>Малярные и отделочные работы.</li>
+                            <li>Наличие всего необхо инструмента.</li>
+                            <li>Гарантию на все выполненные работы.</li>
+                            <li>Круглосуточный вызов электрика на дом и выезд специалистов для решения проблем.</li>
+                            <li>Малярные и отделочные работы.</li>
+                            <li>Использование специалистами безопасных и сертифицированных материалов.</li>
+                            <li>Возможность оплаты любым удобным способом.</li>
+                        </ul>
+                    </div>
+                    <div class="new-content__wrapper-right-img-text">
+                        <img src="./html-img/master-na-chas/master-na-chas-content.jpg" alt="alt" class="new-content__img">
+                        <p>
+                            Мастер на час — особенно выгодная услуга, которая позволяет привести в порядок все вышедшие из строя предметы
+                            хозяйственной необходимости, либо утановки новых. Пользование услугой актуально для тех,
+                            кто имеет мало времени для домашней работы, либо для тех,
+                            у кого нет возможности это сделать ввиду отсутствия необходимого инструмента или навыков.
+                        </p>
+                        <p>
+                            Обращение к услугам нашего Центра гарантирует клиентам качество и
+                            надежность проведённых работ, поскольку наши мастера имеют
+                            квалификацию во многих областях и способны на проведение
+                            электромонтажных и сантехнических работ.
+                        </p>
+                    </div>
+                </div>
+                <div class="new-content__bottom-text">
+                    <p>
+                        Обратиться и получить услугу просто — достаточно сделать заявку на сайте или позвонить по телефону компании.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
 
         <section class="sliderOffers">
             <div class="sliderOffers--wrapper">
