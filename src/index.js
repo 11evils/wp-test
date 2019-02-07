@@ -110,14 +110,17 @@ jQuery(document).ready(function($) {
 
 
 const pageMap = {
-    '#index-hash': '.index-hash',
-    '#santehnik-main': '.santehnik-main',
-    '#santehnik--vizovNaDom': '.santehnik--vizovNaDom',
-    '#santehnik--poVyzovu': '.santehnik--poVyzovu',
-    '#santehnik--ustSantekhniki': '.santehnik--ustSantekhniki',
-    '#santehnik--zamenaSantekhniki': '.santehnik--zamenaSantekhniki',
-    '#ehlektrik-main': '.ehlektrik-main',
-    '#master-main': '.master-main',
+    '#index-hash'                   : '.index-hash',
+    '#santehnik-main'               : '.santehnik-main',
+    '#santehnik--vizovNaDom'        : '.santehnik--vizovNaDom',
+    '#santehnik--poVyzovu'          : '.santehnik--poVyzovu',
+    '#santehnik--ustSantekhniki'    : '.santehnik--ustSantekhniki',
+    '#santehnik--zamenaSantekhniki' : '.santehnik--zamenaSantekhniki',
+    '#santehnik--remontSantekhniki' : '.santehnik--remontSantekhniki',
+    '#santekhnicheskie-raboty'      : '.santehnik--santekhRaboty',
+    '#razvodka-trub'                : '.santehnik--razvTrub',
+    '#ehlektrik-main'               : '.ehlektrik-main',
+    '#master-main'                  : '.master-main',
 }
 
 let currentPage =  document.querySelectorAll('.index-hash');
