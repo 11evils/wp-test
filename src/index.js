@@ -145,7 +145,6 @@ function handlePage() {
             if (currentPage) {
                 for (let i = 0; i < currentPage.length; i++) {
                     currentPage[i].classList.add('hide-section');
-                    // delete currentPage[i];
                 }
             }
 
@@ -157,6 +156,5 @@ function handlePage() {
         }
     }
 
-    //плавный скрол вверх при переходе по ссылкам
-    // $('body,html').animate({scrollTop: 0}, 1500);
+    $('body,html').animate({scrollTop: 0}, 1500);
 }
