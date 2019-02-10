@@ -110,17 +110,23 @@ jQuery(document).ready(function($) {
 
 
 const pageMap = {
-    '#index-hash'                   : '.index-hash',
-    '#santehnik-main'               : '.santehnik-main',
-    '#santehnik--vizovNaDom'        : '.santehnik--vizovNaDom',
-    '#santehnik--poVyzovu'          : '.santehnik--poVyzovu',
-    '#santehnik--ustSantekhniki'    : '.santehnik--ustSantekhniki',
-    '#santehnik--zamenaSantekhniki' : '.santehnik--zamenaSantekhniki',
-    '#santehnik--remontSantekhniki' : '.santehnik--remontSantekhniki',
-    '#santekhnicheskie-raboty'      : '.santehnik--santekhRaboty',
-    '#razvodka-trub'                : '.santehnik--razvTrub',
-    '#ehlektrik-main'               : '.ehlektrik-main',
-    '#master-main'                  : '.master-main',
+    '#index-hash'                       : '.index-hash',
+    '#santehnik-main'                   : '.santehnik-main',
+        '#santehnik--vizovNaDom'            : '.santehnik--vizovNaDom',
+        '#santehnik--poVyzovu'              : '.santehnik--poVyzovu',
+        '#santehnik--ustSantekhniki'        : '.santehnik--ustSantekhniki',
+        '#santehnik--zamenaSantekhniki'     : '.santehnik--zamenaSantekhniki',
+        '#santehnik--remontSantekhniki'     : '.santehnik--remontSantekhniki',
+        '#santekhnicheskie-raboty'          : '.santehnik--santekhRaboty',
+        '#razvodka-trub'                    : '.santehnik--razvTrub',
+        '#svarochno-santekhnicheskie-raboty': '.santehnik--svarSantekhRaboty',
+        '#ustranenie-protechek'             : '.santehnik--ustrProtechek',
+        '#unitaz-pod-klyuch'                : '.santehnik--unitazKlyuch',
+    '#ehlektrik-main'                   : '.ehlektrik-main',
+        '#vyzov-ehlektrika-na-dom'      : '.ehlektrik--naDom',
+        '#ehlektromontazhnye-raboty'    : '.ehlektrik--ehlektroMontazhRaboty',
+        '#ustanovka-svetilnikov'        : '.ehlektrik--ustSvetilnikov',
+    '#master-main'                      : '.master-main',
 }
 
 let currentPage =  document.querySelectorAll('.index-hash');
@@ -150,4 +156,7 @@ function handlePage() {
             currentPage = page;
         }
     }
+
+    //плавный скрол вверх при переходе по ссылкам
+    // $('body,html').animate({scrollTop: 0}, 1500);
 }
