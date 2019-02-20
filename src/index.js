@@ -17,6 +17,8 @@ import './sass/aboutCompany.sass';
 import './sass/contacts.sass';
 import './sass/footer.sass';
 
+import './css/humburger.css';
+
 import 'slick-carousel';
 
 jQuery(document).ready(function($) {
@@ -126,7 +128,15 @@ const pageMap = {
         '#vyzov-ehlektrika-na-dom'      : '.ehlektrik--naDom',
         '#ehlektromontazhnye-raboty'    : '.ehlektrik--ehlektroMontazhRaboty',
         '#ustanovka-svetilnikov'        : '.ehlektrik--ustSvetilnikov',
+        '#ustanovka-lyustry'            : '.ehlektrik--ustLyustry',
+        '#ustanovka-rozetok'            : '.ehlektrik--ustRozetok',
+        '#ustanovka-vyklyuchatelej'     : '.ehlektrik--ustVyklyuch',
+        '#ustanovka-bra'                : '.ehlektrik--ustVyklyuch',
+        '#provodka'                     : '.ehlektrik--provodka',
+        '#montazh-shchitka'             : '.ehlektrik--montShchitka',
     '#master-main'                      : '.master-main',
+        '#ustanovka-bytovoj-tekhniki'   : '.master-ustBytTekh',
+        '#remont-bytovoj-tekhniki'      : '.master-remBytTekh',
 }
 
 let currentPage =  document.querySelectorAll('.index-hash');
@@ -156,5 +166,11 @@ function handlePage() {
         }
     }
 
-    $('body,html').animate({scrollTop: 0}, 1500);
+    // $('body,html').animate({scrollTop: 0}, 1500);
 }
+
+$('.mobileMenu__humburger').click(function() {
+
+    // console.log($(".ham").position().left);
+    
+});
