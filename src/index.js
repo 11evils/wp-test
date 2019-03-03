@@ -166,11 +166,15 @@ function handlePage() {
         }
     }
 
-    // $('body,html').animate({scrollTop: 0}, 1500);
+    $('body,html').animate({scrollTop: 0}, 1500);
 }
 
-$('.mobileMenu__humburger').click(function() {
+$('.mobile-menu__humburger').click(function() {
+    $('.ham').toggleClass('active');
+    $('.mobile-nav_hide').toggleClass('mobile-nav_active');
+});
 
-    // console.log($(".ham").position().left);
-    
+$('.mobile-nav__item-header').click(function() {
+    $(this).toggleClass('mobile-nav__item-arrow_up');
+    $(this).next().toggleClass('mobile-nav__item-links_active');    
 });

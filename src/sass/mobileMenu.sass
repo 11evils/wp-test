@@ -1,4 +1,4 @@
-.mobileMenu
+.mobile-menu
     background-color: #fff
     border-radius: 0 0 0.625rem 0.625rem // 0 0 10px 10px
     display: none
@@ -27,8 +27,122 @@
         align-items: center
         display: flex
         justify-content: center
-        margin-right: 2rem
+        // margin-right: 2rem
+
+.mobile-nav
+    align-items: center
+    background-color: #fff
+    bottom: 0
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    height: calc(100%-50px)
+    left: 0
+    overflow: scroll
+    padding: 0 0 20px 0
+    position: fixed
+    right: 0
+    top: 0
+    transition-property: width
+    transition-duration: .4s
+    z-index: 200
+    &_hide
+        width: 0
+    &_active
+        width: calc(100% - 80px)
+    &__accordion
+        background-color: gray //
+        height: auto
+        min-width: 250px
+        width: 100%
+    &__accordion-item
+        height: auto
+        width: 100%
+        vertical-align: middle
+    &__item-header
+        background-color: #fbe239
+        font-family: MuseoSansBlack
+        font-size: 25px
+        display: inline-block
+        padding: 0 0 0 10px
+        width: 100%
+        vertical-align: middle
+    &__item-arrow
+        &_down
+            &:before
+                border-left: 6px solid transparent
+                border-right: 6px solid transparent
+                border-top: 9px solid black//#f2f6f7
+                content: ""
+                display: inline-block
+                height: 0
+                margin-right: 5px
+                display: inline-block
+                transform: scaleY(-1)
+                transition: 1s
+                width: 0
+                vertical-align: middle
+        &_up
+            &:before
+                border-left: 6px solid transparent
+                border-right: 6px solid transparent
+                border-top: 9px solid black//#f2f6f7
+                content: ""
+                display: inline-block
+                height: 0
+                margin-right: 5px
+                display: inline-block
+                transform: scaleY(1)
+                transition: 1s
+                width: 0
+                vertical-align: middle
+    &__item-links
+        // background-color: blue
+        overflow: hidden
+        transition-property: height
+        transition-duration: .6s
+        width: 100%
+        &_hide
+            height: 0
+        &_active
+            height: 200px
+        
+    // &__slider
+    //     background-color: #FBE239
+    //     font-family: MuseoSansBlack
+    //     font-size: 25px
+    //     // margin-top: 50px
+    //     min-width: 240px
+    //     overflow: hidden
+    //     // padding: 0 0 20px 0
+    //     width: 100%
+    // &__img
+    //     height: 70px
+    //     // margin-left: 50%
+    //     // margin-top: 50px
+    //     // transform: translateX(-50%)
+    //     width: 200px
+    // &__slider-item
+    //     margin-top: 20px
+    //     overflow: hidden
+    //     padding: 0 0 0 30px
+    // &__item-menu
+    //     background-color: green
+    //     max-height: 0
+    //     transition-property: max-height
+    //     transition-duration: .4s
+    //     overflow: hidden
+    // &__active-item-menu
+    //     background-color: green
+    //     max-height: 500px
+    //     overflow: hidden
     
+    // &__item-slider
+        
+    
+// .wrap-mobile-slider
+//     width: 100%
+
 @media (max-width: 991px)
-    .mobileMenu
+    .mobile-menu
         display: block
