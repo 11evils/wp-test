@@ -172,9 +172,46 @@ function handlePage() {
 $('.mobile-menu__humburger').click(function() {
     $('.ham').toggleClass('active');
     $('.mobile-nav_hide').toggleClass('mobile-nav_active');
+    $('.mobile-nav__item-links').each(function() {
+        if ($(this).hasClass('mobile-nav__item-links-1_active')) {
+            $(this).toggleClass('mobile-nav__item-links-1_active');
+        }
+        if ($(this).hasClass('mobile-nav__item-links-2_active')) {
+            $(this).toggleClass('mobile-nav__item-links-2_active');
+        }
+        if ($(this).hasClass('mobile-nav__item-links-3_active')) {
+            $(this).toggleClass('mobile-nav__item-links-3_active');
+        }
+    });
 });
 
-$('.mobile-nav__item-header').click(function() {
+$('.mobile-nav__header-1').click(function() {
     $(this).toggleClass('mobile-nav__item-arrow_up');
-    $(this).next().toggleClass('mobile-nav__item-links_active');    
+    $(this).next().toggleClass('mobile-nav__item-links-1_active');    
+});
+
+$('.mobile-nav__header-2').click(function() {
+    $(this).toggleClass('mobile-nav__item-arrow_up');
+    $(this).next().toggleClass('mobile-nav__item-links-2_active');    
+});
+
+$('.mobile-nav__header-3').click(function() {
+    $(this).toggleClass('mobile-nav__item-arrow_up');
+    $(this).next().toggleClass('mobile-nav__item-links-3_active');    
+});
+
+$('.mobile-nav__link').click(function() {
+    $('.ham').toggleClass('active');
+    $('.mobile-nav_hide').toggleClass('mobile-nav_active');
+    $('.mobile-nav__item-links').each(function() {
+        if ($(this).hasClass('mobile-nav__item-links-1_active')) {
+            $(this).toggleClass('mobile-nav__item-links-1_active')
+        }
+        if ($(this).hasClass('mobile-nav__item-links-2_active')) {
+            $(this).toggleClass('mobile-nav__item-links-2_active')
+        }
+        if ($(this).hasClass('mobile-nav__item-links-3_active')) {
+            $(this).toggleClass('mobile-nav__item-links-3_active')
+        }
+    });
 });
