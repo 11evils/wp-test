@@ -166,7 +166,8 @@ function handlePage() {
         }
     }
 
-    $('body,html').animate({scrollTop: 0}, 1500);
+    // $('body,html').animate({scrollTop: 0}, 1);
+    $('body,html').scrollTop(0);
 }
 
 $('.mobile-menu__humburger').click(function() {
