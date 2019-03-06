@@ -21,6 +21,15 @@ import './css/humburger.css';
 
 import 'slick-carousel';
 
+//отложенная загрузка страницы
+function init() {
+    var imgDefer = document.getElementsByTagName('img');
+    for (var i=0; i<imgDefer.length; i++) {
+    if(imgDefer[i].getAttribute('data-src')) {
+    imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
+    } } }
+    window.onload = init;
+
 jQuery(document).ready(function($) {
     $('.sliderOffers--slider').slick({
         // dots: true,
@@ -38,6 +47,14 @@ jQuery(document).ready(function($) {
         $('.overlay').css('display', 'flex');
         $('.textFromButton').text($(this).attr('data-modalTitle'));
     });
+
+    // $('.showModal').click(function (e) { 
+    //     e.preventDefault();
+    //     $('.overlay').fadeIn();
+    //     $('.overlay').css('display', 'flex');
+    //     $('.textFromButton').text($(this).attr('data-modalTitle'));
+    // });
+
 
     $('.modalWindow--close').click(function (e) {
         e.preventDefault();
